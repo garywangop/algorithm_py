@@ -17,3 +17,11 @@ Python是可以直接比较这样的string的。
 
 a = 'abc'，我可以用a * 3直接得到一个'abcabcabc'的string
 
+对一个string使用Count方法，可以生成一个key = s[i], value = s[i] count的dict
+```
+from collections import Counter
+my_map = Counter('abc')
+```
+
+如何取chr的ASCII：`ord('c')`
+

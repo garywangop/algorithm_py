@@ -26,3 +26,10 @@ print(random())
 import random
 print(random.randInt(1, 10))
 ```
+
+Python也是pass by reference，所以如果要把param传到别的地方去，不想修改原param的话，可以建立一个shallow copy: 
+```
+import copy
+new_param = copy.copy(param)
+```
+如果param是个list，更简单的写法: `new_my_list = my_list[:]`
