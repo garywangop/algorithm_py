@@ -1,4 +1,5 @@
-from collections import Counter
+from collections import Counter, defaultdict
+from typing import List
 
 
 def test_map():
@@ -27,7 +28,15 @@ def test2(l: list[int]):
     print(ll)
     print(l)
 
+def default_value():
+    return "some default values"
+
 
 if __name__ == '__main__':
     my_map = {chr(i): 0 for i in range(ord('z'), ord('a') - 1, -1)}
     print(my_map)
+    s = "12341"
+    print(s.count("23"))
+    # m = defaultdict(lambda: "abcd")
+    m = defaultdict(default_value)
+    print(m['abc'])
