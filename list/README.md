@@ -49,6 +49,7 @@ newlist = [x.upper() for x in fruits if 'a' in x]
 ```
 l = [0 for _ in range(3)]
 ```
+或者`l = [0] * 3`
 
 例子3:i, j变量可以直接连起来
 ```

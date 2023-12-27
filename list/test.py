@@ -19,9 +19,11 @@ if __name__ == '__main__':
     for i in range(len(s)):
         l1[ord(s[i]) - ord('a')] += 1
         l2[ord(t[i]) - ord('a')] += 1
-    print(l1 == l2)
+    # print(l1 == l2)
     l = [1,2,3]
     m = Counter(l)
-    print(m)
+    # print(m)
+    l3 = [0] * 3
+    print(l3)
 
 
