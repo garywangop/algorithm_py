@@ -37,7 +37,9 @@ print(l1)
 matrix = [[0] * col for _ in range(row)]
 ```
 
-List comprehension:
+在method的signature中，list的l要大写，用List，List是typing中的泛型
+
+# List comprehension:
 `newlist = [item expression for item in iterable if condition == True]`
 例子1：
 ```
@@ -57,4 +59,14 @@ l = [[i, j] for i in range(-1, 2) for j in range(-1, 2)]
 ```
 
 在method的signature中，list的l要大写，用List，List是typing中的泛型
+
+# 奇技淫巧
+- `list(s: str)`等同于Java里的s.toCharArray() (LC443)
+- 把一个list的一段赋值到另一个list里的一段，下面的例子是把l2赋值到l1里去(从start开始赋值) (LC443)
+```
+l1 = [...], l2 = [...]
+l1[start, len(l2)] = l2
+```
+
+
 
