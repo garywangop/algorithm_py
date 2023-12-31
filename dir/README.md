@@ -8,6 +8,7 @@ my_map = defaultdict(default_value)
 Note： 当get一个key时，如果key不存在，那么就会运行def_value
 
 我们常常可以直接写`my_map = defaultdict(int/list/str)`，当key不存在时return 0/[]/""
+defaultdict还有个好处，就算key不存在，当运行my_map(key) += 1时，my_map(key)的value会直接+1，不需要update回去
 
 如果想自定义return的内容，可以：
 1. 用lambda: `my_map = defaultdict(lambda: "abc")`

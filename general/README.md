@@ -33,3 +33,9 @@ import copy
 new_param = copy.copy(param)
 ```
 如果param是个list，更简单的写法: `new_my_list = my_list[:]`
+
+# enumerate
+在for loop循环东西的时候，可以用enumerate method同时拿到index和item
+```
+for index, item in enumerate(string/list/etc.)
+```

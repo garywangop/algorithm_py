@@ -28,6 +28,7 @@ def test2(l: list[int]):
     print(ll)
     print(l)
 
+
 def default_value():
     return "some default values"
 
@@ -40,3 +41,9 @@ if __name__ == '__main__':
     # m = defaultdict(lambda: "abcd")
     m = defaultdict(default_value)
     print(m['abc'])
+    print(m)
+
+    m2 = {}
+    value = m2.get("key", "abc")
+    m2.update({"key": value})
+    print(m2)

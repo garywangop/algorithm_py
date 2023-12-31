@@ -1,5 +1,5 @@
 if __name__ == '__main__':
-    a = 'a'
-    print(a * 3)
-    s = '-1'
-    print('-2' < '-1')
+    s = "abc"
+    for ii, ci in enumerate([1,2,3]):
+        print(f"i: {ii}, c: {ci}")
+
