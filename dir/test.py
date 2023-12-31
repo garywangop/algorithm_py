@@ -43,7 +43,7 @@ if __name__ == '__main__':
     print(m['abc'])
     print(m)
 
-    m2 = {}
-    value = m2.get("key", "abc")
-    m2.update({"key": value})
-    print(m2)
+    if "a" not in m:
+        print("no")
+    else:
+        print("yes")

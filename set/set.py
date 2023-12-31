@@ -6,3 +6,8 @@ if __name__ == '__main__':
     print(my_set.add(4))
 
     print(my_set)
+
+    set1 = set([1,2,3])
+    set1.add(3)
+    print(set1)
+

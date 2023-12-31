@@ -26,4 +26,10 @@ if __name__ == '__main__':
     l3 = [0] * 3
     print(l3)
 
+    l4 = [1,2,3]
+    print(sum(l4))
+
+    t = (1,2, 3)
+    print(t[0])
+
 
