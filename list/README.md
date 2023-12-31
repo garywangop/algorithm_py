@@ -53,6 +53,8 @@ l = [0 for _ in range(3)]
 ```
 或者`l = [0] * 3`
 
+创建[[0],[0],[0]]: `l = [[0]] * 3` or `l = [[0] for _ in range(3)]`
+
 例子3:i, j变量可以直接连起来
 ```
 l = [[i, j] for i in range(-1, 2) for j in range(-1, 2)]

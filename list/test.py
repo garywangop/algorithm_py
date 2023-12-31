@@ -32,4 +32,10 @@ if __name__ == '__main__':
     t = (1,2, 3)
     print(t[0])
 
+    print([[0]] * 3)
+    print([[0] for _ in range(3)])
+    print([[0] * 3])
 
+    a = b = []
+    a.append('a')
+    print(b)
