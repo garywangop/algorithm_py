@@ -39,3 +39,42 @@ new_param = copy.copy(param)
 ```
 for index, item in enumerate(string/list/etc.)
 ```
+# 不可变object:
+- int
+- float
+- str
+- tuple
+- frozenset
+
+# inner function调用outer function的变量
+inner function不可以直接调用outer function的不可变对象(int, float, str, tuple, frozenset)
+```
+def outer():
+    a = 1
+    def inner():
+        a += 1
+```
+这样会报错。在执行a += 1操作的时候，这实际上创建了一个新的整数对象，并将a指向新对象。inner function无法指向新对象
+如果想在inner调用outer的变量，有两种方法：
+1. 使用self
+```
+   def outer():
+    self.a = 1
+    def inner():
+        self.a += 1
+```
+2. 使用nonlocal
+```
+def outer():
+    a = 1
+    def inner():
+        nonlocal a
+        a += 1
+```
+# unpack:
+```
+a, b = [1, 2]
+```
+这样a和b可以被unpack成1和2
+# Return 多个变量: lc1120
+```return 1, 2```

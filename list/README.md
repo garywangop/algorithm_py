@@ -69,6 +69,6 @@ l = [[i, j] for i in range(-1, 2) for j in range(-1, 2)]
 l1 = [...], l2 = [...]
 l1[start, len(l2)] = l2
 ```
-
+- 两个list可以直接用"+"拼接成一个list
 
 
