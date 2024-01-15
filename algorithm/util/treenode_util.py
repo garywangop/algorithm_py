@@ -17,16 +17,18 @@ class TreeNodeUtil:
         index = 1
         while index < len(self.l):
             cur = q.popleft()
-            if index < len(self.l) and self.l[index]:
-                left_node = TreeNode(self.l[index])
-                cur.left = left_node
-                q.append(left_node)
+            if index < len(self.l):
+                if self.l[index]:
+                    left_node = TreeNode(self.l[index])
+                    cur.left = left_node
+                    q.append(left_node)
                 index += 1
 
-            if index < len(self.l) and self.l[index]:
-                right_node = TreeNode(self.l[index])
-                cur.right = right_node
-                q.append(right_node)
+            if index < len(self.l):
+                if self.l[index]:
+                    right_node = TreeNode(self.l[index])
+                    cur.right = right_node
+                    q.append(right_node)
                 index += 1
 
         return root

@@ -36,12 +36,20 @@ get还可以传入第二个变量，如果get的key不存在，那么就返回�
 
 用get比较靠谱，如果key 'a'不存在的时候，`my_map['a']`会直接报错，但是`my_map.get('a')`会返回None
 
+# 遍历
 iterate keys:
 `for i in my_map.keys()`
 iterate values: 
 `for i in my_map.values()`
+iterate items:
+`for key, value in my_map.items()`
 
-Remove a key: 
+# Remove a key: 
 `my_map.pop(key)`
+
+# keys和values排序
+keys和values是可以直接sort的，但是不能直接map.keys().sort()，因为map.keys()没有sort这个方法
+要sort的话需要写成sorted(map.keys())
+LC1657就是个比较好的例子
 
 
