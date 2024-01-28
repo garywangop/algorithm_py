@@ -11,7 +11,7 @@ Tuple和list类似，区别是tuple is immutable
 is比较的是memory reference
 Python中的None是唯一的，所以如果要check None的话，要用is来check
 
-Generate random number:
+# Generate random number:
 ```
 import random
 print(random.random())
