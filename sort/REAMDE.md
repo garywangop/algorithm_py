@@ -36,3 +36,26 @@ def custom_sort(item):
 # 使用sorted函数进行排序，key参数指定排序规则
 `sorted_list = sorted(my_list, key=custom_sort)`
 
+# 例子
+一个list里都是str，按以下规则排序：
+1. 按str的长度从小到大
+2. 长度一样的话按字母顺序
+
+写法：
+`sorted(l, key=lambda x: (len(x), x))`
+
+或者(使用cmp_to_key，这样的原始写法更加容易理解):
+```
+from functools import cmp_to_key
+
+def custom_compare(x, y):
+    # 先按长度排序，长度相同则按字典顺序排序
+    len_diff = len(x) - len(y)
+    if len_diff != 0:
+        return len_diff
+    else:
+        return 1 if x > y else -1
+
+sorted_list = sorted(my_list, key=cmp_to_key(custom_compare))
+```
+
