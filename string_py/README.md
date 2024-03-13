@@ -29,3 +29,9 @@ my_map = Counter('abc')
 # 如何取chr的ASCII：
 `ord('c')`
 
+# str can be sorted，sort完之后return出来的东西是个list
+`sorted(s)`
+
+# 把str拼成一个list
+`"".join(s)"` or `",".join(s)`
+
