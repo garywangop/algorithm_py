@@ -18,5 +18,8 @@ def firstPalindrome(words: List[str]) -> str:
 
     return ""
 
+
 if __name__ == '__main__':
     firstPalindrome(["cqllrtyhw","swwisru","gpzmbders","wqibjuqvs","pp","usewxryy","ybqfuh","hqwwqftgyu","jggmatpk"])
+    s = "abc"
+    print(s.find('bcc'))

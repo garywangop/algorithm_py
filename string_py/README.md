@@ -35,3 +35,9 @@ my_map = Counter('abc')
 # 把str拼成一个list
 `"".join(s)"` or `",".join(s)`
 
+# 找str中是否存在substring，存在的话return substring开始的那个index，不存在的话return -1
+`s.find(sub_str)`
+
+# 反转str
+`s[::-1]`
+
