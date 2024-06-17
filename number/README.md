@@ -14,3 +14,4 @@ a = float("inf")
 指数表示方法 a^b: `a ** b`
 
 计算平方根的话，用`math.sqrt(x)`，注意，平方根输出的一定是float。所以如果要判断计算结果是否为整数，要用`res.is_integer()`，如果为整数，就可以把计算结果转换成整数并输出`int(res)`
+直接返回`math.sqrt(x).floor()`的话，可以用`math.isqrt(x)`
