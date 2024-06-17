@@ -1,4 +1,8 @@
-from collections import Counter
+from collections import Counter, defaultdict
+# from collections.abc import Set
+
+
+# from typing import Set
 
 
 def a():
@@ -18,3 +22,7 @@ if __name__ == '__main__':
     print(list(s))
     print("".join(ss))
     print(f"run a: {a()}")
+    m = defaultdict(set)
+    m['a'].add(1)
+    m['a'].add(2)
+    print(m)

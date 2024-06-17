@@ -20,6 +20,5 @@ def firstPalindrome(words: List[str]) -> str:
 
 
 if __name__ == '__main__':
-    firstPalindrome(["cqllrtyhw","swwisru","gpzmbders","wqibjuqvs","pp","usewxryy","ybqfuh","hqwwqftgyu","jggmatpk"])
-    s = "abc"
-    print(s.find('bcc'))
+    s = "1.0.0"
+    print(list(map(int, s.split('.'))))
