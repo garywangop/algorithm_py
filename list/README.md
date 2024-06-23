@@ -9,6 +9,8 @@ max(1,2,3,4,5) -> 5
 
 移除最后一个item，l.pop()
 移除特定index的item，l.pop(index)
+移除特定的value(只会移除第一个),`l.remove(value)`
+移除所有等于v的value: `l = filter(lambda val: val != v, l)`
 
 add一个item到list里去可以用append或者extend，我觉得用append比较靠谱
 
