@@ -59,3 +59,5 @@ def custom_compare(x, y):
 sorted_list = sorted(my_list, key=cmp_to_key(custom_compare))
 ```
 
+# dict的话，能直接用sorted去sort dict的key
+
