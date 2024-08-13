@@ -22,3 +22,12 @@ def firstPalindrome(words: List[str]) -> str:
 if __name__ == '__main__':
     s = "1.0.0"
     print(list(map(int, s.split('.'))))
+    ss = "abcdefg"
+    print(ss[0:3:(-1)])
+    stack = [1,2,3]
+    print("".join(str(i) for i in stack))
+    s1 = "//\\"
+    for i in s1:
+        print(i)
+    res = set([1,3,5,7,9])
+    print(list(res))
