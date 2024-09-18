@@ -61,3 +61,14 @@ sorted_list = sorted(my_list, key=cmp_to_key(custom_compare))
 
 # dict的话，能直接用sorted去sort dict的key
 
+# Custom comparator: LC179
+```angular2html
+    def comparator(n1, n2):
+        if n1 + n2 > n2 + n1:
+            return -1
+        else:
+            return 1
+
+    arr = sorted(arr, key=cmp_to_key(comparator))
+```
+
