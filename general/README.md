@@ -78,3 +78,12 @@ a, b = [1, 2]
 这样a和b可以被unpack成1和2
 # Return 多个变量: lc1120
 ```return 1, 2```
+# 变量作用域
+```angular2html
+def test(n, k):
+    def helper():
+        print(n)
+        print(k)
+        k -= 1
+```
+当k -= 1时会报错，inner function可以读取到outer function的变量，但是不能修改。如果想在inner function里修改outer function的值，需要在inner function里加上`nonlocal k`
