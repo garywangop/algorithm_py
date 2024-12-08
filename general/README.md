@@ -87,3 +87,7 @@ def test(n, k):
         k -= 1
 ```
 当k -= 1时会报错，inner function可以读取到outer function的变量，但是不能修改。如果想在inner function里修改outer function的值，需要在inner function里加上`nonlocal k`
+
+`*` 用于解包可迭代对象（列表、元组等）成位置参数
+
+`**` 用于解包字典成关键字参数
